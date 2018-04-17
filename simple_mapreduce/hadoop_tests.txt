@@ -1,0 +1,11 @@
+/usr/local/hadoop/share/hadoop/tools/lib/hadoop-streaming-3.0.0.jar
+
+
+in hadoop folder
+
+bin/hadoop jar /usr/local/hadoop/share/hadoop/tools/lib/hadoop-streaming-3.0.0.jar -file /home/gubo/Documents/Workspace/bo_ds/simple_mapreduce/mapper.py -mapper mapper.py -file /home/gubo/Documents/Workspace/bo_ds/simple_mapreduce/reducer.py -reducer reducer.py -input /user/gubo/input_simple -output /user/gubo/Wordcount
+
+in hadoop@boyi70
+/home/hadoop/test/simple_mapreduce
+
+hadoop jar /home/hadoop/hadoop/share/hadoop/tools/lib/hadoop-streaming-2.9.0.jar -file mapper.py -mapper mapper.py -file reducer.py -reducer reducer.py -input /user/hadoop/input -output /user/hadoop/Wordcount
